@@ -1,6 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://feelinlucky.github.io/hugo-blogs/'
 locale = 'en-us'
-title = 'My New Hugo Project'
-theme = "book"
-[params]
-  BookSection = "docs"
+title = 'Hugo Blogs'
+theme = 'book'
