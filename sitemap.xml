@@ -1,18 +1,1 @@
-
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://example.org/docs/</loc>
-  </url><url>
-    <loc>https://example.org/docs/getting-started/</loc>
-  </url><url>
-    <loc>https://example.org/docs/introduction/</loc>
-  </url><url>
-    <loc>https://example.org/categories/</loc>
-  </url><url>
-    <loc>https://example.org/</loc>
-  </url><url>
-    <loc>https://example.org/tags/</loc>
-  </url>
-</urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://feelinlucky.github.io/hugo-blogs/docs/</loc></url><url><loc>https://feelinlucky.github.io/hugo-blogs/docs/getting-started/</loc></url><url><loc>https://feelinlucky.github.io/hugo-blogs/docs/introduction/</loc></url><url><loc>https://feelinlucky.github.io/hugo-blogs/categories/</loc></url><url><loc>https://feelinlucky.github.io/hugo-blogs/</loc></url><url><loc>https://feelinlucky.github.io/hugo-blogs/tags/</loc></url></urlset>
