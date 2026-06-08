@@ -1,0 +1,64 @@
+// assets/_custom.scss
+
+// 1. Theme Color Overrides (Optional variables supported by Hugo Book)
+:root {
+  --color-link: #007bc2;
+  --body-background: #fdfdfd;
+}
+
+// 2. Custom Hero Section Styles
+.welcome-hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 1.5rem 0 2.5rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+
+  h1 {
+    margin-top: 0;
+    font-size: 2.25rem;
+    color: #1a202c;
+    border-bottom: none; // Removes Hugo Book's default header underline
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+  }
+}
+
+// 3. Custom Button Framework matching Hugo Book's aesthetics
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: #007bc2;
+  color: #ffffff !important;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+
+  &:hover {
+    background-color: #005a90;
+    transform: translateY(-1px);
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    color: #4a5568 !important;
+    border: 2px solid #cbd5e0;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      border-color: #a0aec0;
+    }
+  }
+}
