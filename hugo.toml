@@ -2,3 +2,8 @@ baseURL = 'https://feelinlucky.github.io/hugo-blogs/'
 locale = 'en-us'
 title = 'Hugo Blogs'
 theme = 'book'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
