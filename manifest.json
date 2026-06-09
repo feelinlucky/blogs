@@ -1,14 +1,14 @@
 {
   "name": "Hugo Blogs",
   "short_name": "Hugo Blogs",
-  "start_url": "/hugo-blogs/",
-  "scope": "/hugo-blogs/",
+  "start_url": "/blogs/",
+  "scope": "/blogs/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/hugo-blogs/favicon.svg",
+      "src": "/blogs/favicon.svg",
       "sizes": "512x512"
     }
   ]
