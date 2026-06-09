@@ -14,6 +14,26 @@ weight: 1
 <a href="https://github.com" class="book-btn btn-secondary">GitHub</a>
 </div>
 </div>
+
+<div class="cards-grid">
+<div class="info-card">
+<div class="card-icon">📚</div>
+<h3>Digital Garden</h3>
+<p>An evolving collection of public notes, structural thoughts, and daily learnings.</p>
+</div>
+
+<div class="info-card">
+<div class="card-icon">⚡</div>
+<h3>Quick Guides</h3>
+<p>Bite-sized, practical cheat sheets and tutorials built for speed execution.</p>
+</div>
+
+<div class="info-card">
+<div class="card-icon">🛠️</div>
+<h3>Projects</h3>
+<p>An overview of active open-source extensions, tools, and side experiments.</p>
+</div>
+</div>
 </div>
 
 ### What you'll find here

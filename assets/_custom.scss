@@ -67,3 +67,58 @@
     }
   }
 }
+
+// assets/_custom.scss
+
+// 4. Multi-Card Grid System
+.cards-grid {
+  display: flex;
+  flex-direction: column; // Stacks cards vertically on mobile screens
+  gap: 1.5rem;            // Even spacing between cards
+  margin-top: 3rem;       // Generous separation from the main hero text
+  width: 100%;
+}
+
+// Switches to an elegant row layout on tablets and desktops
+@media (min-width: 768px) {
+  .cards-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+// Individual Card Content Blocks
+.info-card {
+  flex: 1;                 // Forces all cards to split width completely evenly
+  background: rgba(255, 255, 255, 0.03); // Subtle glass transparency over dark bg
+  border: 1px solid rgba(255, 255, 255, 0.08); // Whisper-thin boundary border
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;        // Makes content inside easy to scan/read
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px); // Lift effect when hovered
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #38bdf8; // Highlights card with your custom blue link color
+  }
+
+  .card-icon {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #ffffff;
+    border-bottom: none; // Strips default Hugo headers underlines inside cards
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #94a3b8;        // Soft layout description text color
+    line-height: 1.5;
+  }
+}
