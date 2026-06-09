@@ -3,6 +3,10 @@ locale = 'en-us'
 title = '​🇳🇮​​🇨​​🇪​ ​🇹​​🇭​​🇮​​🇳​​🇬​​🇸​'
 theme = 'book'
 
+[params]
+  # Options: "light", "dark", or "auto" (auto follows system settings)
+  BookTheme = "dark"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
