@@ -7,6 +7,23 @@
 &lt;a href="https://github.com" class="book-btn btn-secondary"&gt;GitHub&lt;/a&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="cards-grid"&gt;
+&lt;div class="info-card"&gt;
+&lt;div class="card-icon"&gt;📚&lt;/div&gt;
+&lt;h3&gt;Digital Garden&lt;/h3&gt;
+&lt;p&gt;An evolving collection of public notes, structural thoughts, and daily learnings.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="info-card"&gt;
+&lt;div class="card-icon"&gt;⚡&lt;/div&gt;
+&lt;h3&gt;Quick Guides&lt;/h3&gt;
+&lt;p&gt;Bite-sized, practical cheat sheets and tutorials built for speed execution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="info-card"&gt;
+&lt;div class="card-icon"&gt;🛠️&lt;/div&gt;
+&lt;h3&gt;Projects&lt;/h3&gt;
+&lt;p&gt;An overview of active open-source extensions, tools, and side experiments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;h3 id="what-youll-find-here"&gt;What you&amp;rsquo;ll find here&lt;a class="anchor" href="#what-youll-find-here"&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Use this documentation space to explore our guides, APIs, and structural overviews.&lt;/p&gt;</description></item></channel></rss>
