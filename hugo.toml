@@ -6,6 +6,7 @@ theme = 'book'
 [params]
   # Options: "light", "dark", or "auto" (auto follows system settings)
   BookTheme = "dark"
+  BookFontFamily = "'Urbanist', sans-serif"
 
 [markup]
   [markup.goldmark]
