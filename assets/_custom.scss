@@ -68,8 +68,6 @@
   }
 }
 
-// assets/_custom.scss
-
 // 4. Multi-Card Grid System
 .cards-grid {
   display: flex;
@@ -120,5 +118,95 @@
     font-size: 0.95rem;
     color: #94a3b8;        // Soft layout description text color
     line-height: 1.5;
+  }
+}
+
+// assets/_custom.scss
+
+// 1. Assign the new Typography Globally
+body, input, button {
+  font-family: 'Urbanist', sans-serif;
+}
+
+code, pre, .mono-text {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+// 2. Index Hero Container Styling with Patterned Background
+.custom-index-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 1rem 0;
+  
+  // Base dark background color
+  background-color: #0b0f19; 
+  
+  // High-performance CSS Blueprint/Grid Background Pattern
+  background-image: 
+    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px; // Sets the density size of the pattern squares
+  background-position: center;
+  
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+// Radial gradient flare element to add depth on top of the grid pattern
+.custom-index-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at center, rgba(58, 123, 213, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+// 3. Inner Typography and Button Alignment
+.hero-overlay-content {
+  position: relative;
+  z-index: 2; // Places text safely above background gradients
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    border-bottom: none; // Strips default theme border accent line
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+  }
+}
+
+// 4. Accent Call-To-Action Button
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff !important;
+  background-color: #007bc2;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 123, 194, 0.3);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #0090e0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 123, 194, 0.4);
   }
 }
