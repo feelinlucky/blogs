@@ -145,6 +145,8 @@ code, pre, .mono-text {
 }
 
 // 2. Index Hero Container Styling with Patterned Background
+// assets/_custom.scss
+
 .custom-index-hero {
   position: relative;
   min-height: 70vh;
@@ -155,13 +157,13 @@ code, pre, .mono-text {
   overflow: hidden;
   margin: 1rem 0;
   
-  // Base dark background color
   background-color: #0b0f19; 
   
-  // High-performance CSS Blueprint/Grid Background Pattern
-  background-image: url("/images/wood_sprite.png");
-  background-repeat: repeat; // Explicitly repeats the tiny image across the width
-  background-size: 30px 30px; // Sets the density size of the pattern squares
+  // FIX: Add your GitHub Pages subdirectory here (/blogs)
+  background-image: url("/blogs/images/wood_sprite.png");
+  
+  background-repeat: repeat; 
+  background-size: 30px 30px; 
   background-position: center;
   
   border: 1px solid rgba(255, 255, 255, 0.05);
