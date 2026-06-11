@@ -159,9 +159,8 @@ code, pre, .mono-text {
   background-color: #0b0f19; 
   
   // High-performance CSS Blueprint/Grid Background Pattern
-  background-image: 
-    linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+  background-image: url("/images/wood_sprite.png");
+  background-repeat: repeat; // Explicitly repeats the tiny image across the width
   background-size: 30px 30px; // Sets the density size of the pattern squares
   background-position: center;
   
