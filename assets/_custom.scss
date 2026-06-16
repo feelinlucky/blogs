@@ -1,31 +1,42 @@
 // assets/_custom.scss
 
-// assets/_custom.scss
-
-// 1. Force Global Typography and Base Colors (BASE TILE ONLY ON ROOT)
+// 1. Force Global Typography and Base Colors
 :root {
   --color-link: #38bdf8;
-  
-  // The theme natively applies this variable to the main canvas wrapper
-  --body-background: #121214 url("/blogs/images/index_bg.png") repeat !important;
-  
   --body-font-color: #e2e8f0 !important;
   --hint-background: #1e1e24;
   --gray-200: #2d3748;
+  
+  // Set the fallback theme variable to transparent so it doesn't block the body canvas
+  --body-background: transparent !important;
 }
 
-// Set global font settings and dictate the single pattern's layout rules on the root body
-body {
+// 2. Apply the single, master background tile to the root canvas layers
+html, body {
+  background-color: #121214 !important; // Deep base color beneath the image
+  background-image: url("/blogs/images/index_bg.png") !important;
+  background-repeat: repeat !important;
   background-size: 90px auto !important; 
   background-position: top left !important;
   font-family: 'Urbanist', sans-serif !important;
 }
 
-// Remove any background layers from internal page wrappers so they stay transparent
-.book-page, .book-menu, .book-toc {
+// 3. Make the main layout sheets completely clear so the background shows through
+.book-app,
+.book-page, 
+main,
+article {
   background: transparent !important;
 }
 
+// 4. Clean up Sidebar & TOC (Give them a translucent background so text stays readable)
+.book-menu, 
+.book-toc {
+  background: rgba(18, 18, 20, 0.8) !important; // 80% opacity dark tint
+  backdrop-filter: blur(12px); // Blurs the star tile behind the sidebar for a premium feel
+}
+
+// 5. Global Typography overrides
 input, button, h1, h2, h3, h4, p {
   font-family: 'Urbanist', sans-serif !important;
 }
