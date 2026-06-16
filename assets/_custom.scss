@@ -44,9 +44,6 @@ article {
   padding: 1.5rem !important;
   margin: 1rem !important;                    // Floats the menu container slightly off the screen edges
   height: calc(100vh - 2rem) !important;      // Prevents the frame from stretching off-screen
-  
-  // Premium box shadow glow effect
-  box-shadow: 0 0 0 4px #000000, 0 10px 25px rgba(0, 0, 0, 0.7) !important;
 }
 
 // Adjust the scrollable area inside the menu so it doesn't break your rounded corners
