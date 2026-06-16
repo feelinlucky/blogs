@@ -29,11 +29,31 @@ article {
   background: transparent !important;
 }
 
-// 4. Clean up Sidebar & TOC (Give them a translucent background so text stays readable)
-.book-menu, 
-.book-toc {
-  background: rgba(47, 70, 164, 1) !important; // 80% opacity dark tint
-  backdrop-filter: blur(12px); // Blurs the star tile behind the sidebar for a premium feel
+// 4. Retro RPG Side Menu Customization
+.book-menu {
+  // Classic dark blue/black RPG window fluid background tint
+  background: rgba(47, 70, 164, 0.9) !important; 
+  
+  // Create the iconic retro borders
+  border: 3px solid #ffffff !important;        // Thick white outer frame
+  outline: 1px solid #000000 !important;      // Dark accent shadow outline
+  outline-offset: -2px;                       // Pulls outline slightly inside the frame
+  
+  // Curved edges matching older CRT screen constraints
+  border-radius: 12px !important;
+  
+  // Generous structural spacing so text doesn't bump the border walls
+  padding: 1.5rem !important;
+  margin: 1rem !important;                    // Floats the menu container slightly off the screen edges
+  height: calc(100vh - 2rem) !important;      // Prevents the frame from stretching off-screen
+  
+  // Premium box shadow glow effect
+  box-shadow: 0 0 0 4px #000000, 0 10px 25px rgba(0, 0, 0, 0.7) !important;
+}
+
+// Adjust the scrollable area inside the menu so it doesn't break your rounded corners
+.book-menu nav {
+  padding-right: 0.5rem;
 }
 
 // 5. Global Typography overrides
