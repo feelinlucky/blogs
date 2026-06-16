@@ -36,8 +36,6 @@ article {
   
   // Create the iconic retro borders
   border: 3px solid #ffffff !important;        // Thick white outer frame
-  outline: 1px solid #000000 !important;      // Dark accent shadow outline
-  outline-offset: -2px;                       // Pulls outline slightly inside the frame
   
   // Curved edges matching older CRT screen constraints
   border-radius: 12px !important;
