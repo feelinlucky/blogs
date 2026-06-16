@@ -32,7 +32,7 @@ article {
 // 4. Clean up Sidebar & TOC (Give them a translucent background so text stays readable)
 .book-menu, 
 .book-toc {
-  background: rgba(18, 18, 20, 0.8) !important; // 80% opacity dark tint
+  background: rgba(47, 70, 164, 1) !important; // 80% opacity dark tint
   backdrop-filter: blur(12px); // Blurs the star tile behind the sidebar for a premium feel
 }
 
