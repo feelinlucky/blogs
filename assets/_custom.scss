@@ -242,3 +242,27 @@ code, pre, .mono-text {
     margin-bottom: 2.5rem;
   }
 }
+
+// 5. Fix Search Box Overflows inside Retro Border
+.book-search {
+  width: 100% !important;         // Forces the wrapper to match the menu interior width
+  box-sizing: border-box !important;
+  padding: 0 0.5rem !important;   // Adds breathing room on the left/right inside the menu
+  
+  input {
+    width: 100% !important;       // Restricts the actual text field size safely
+    max-width: 100% !important;   // Double-guard constraint against overflow leak
+    box-sizing: border-box !important;
+    
+    // Optional Retro Styling for Search Input box to match the look
+    background-color: rgba(0, 0, 0, 0.5) !important; // Solid retro black field cutout
+    border: 2px solid #ffffff !important;           // Matching menu frame lines
+    border-radius: 4px !important;                  // Slightly rounded box
+    color: #ffffff !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.4) !important;   // High-contrast readable hint placeholder
+    }
+  }
+}
