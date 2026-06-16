@@ -1,21 +1,29 @@
 // assets/_custom.scss
 
-// 1. Force Global Typography and Base Colors (BASE TILE: STAR)
+// assets/_custom.scss
+
+// 1. Force Global Typography and Base Colors (BASE TILE ONLY ON ROOT)
 :root {
   --color-link: #38bdf8;
+  
+  // The theme natively applies this variable to the main canvas wrapper
   --body-background: #121214 url("/blogs/images/index_bg.png") repeat !important;
+  
   --body-font-color: #e2e8f0 !important;
   --hint-background: #1e1e24;
   --gray-200: #2d3748;
 }
 
-// Force the star tiled layout properties globally
-body, .book-page {
-  background-image: url("/blogs/images/index_bg.png") !important;
-  background-repeat: repeat !important;
+// Set global font settings and dictate the single pattern's layout rules on the root body
+body {
   background-size: 90px auto !important; 
   background-position: top left !important;
   font-family: 'Urbanist', sans-serif !important;
+}
+
+// Remove any background layers from internal page wrappers so they stay transparent
+.book-page, .book-menu, .book-toc {
+  background: transparent !important;
 }
 
 input, button, h1, h2, h3, h4, p {
