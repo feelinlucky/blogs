@@ -1,17 +1,21 @@
 // assets/_custom.scss
-
 // 1. Force Global Typography and Base Flat Colors
 :root {
   --color-link: #38bdf8;
-  --body-background: #557582 !important; // Flat matte dark background canvas
-  --body-font-color: #e2e8f0 !important; // Off-white readable body text
+  
+  // CHANGED: Update the theme layout background variable to your new color
+  --body-background: #557582 !important; 
+  
+  --body-font-color: #e2e8f0 !important;
   --hint-background: #1e1e24;
   --gray-200: #2d3748;
 }
 
 // Global base layer resets
 html, body {
-  background-color: #121214 !important; // Solid flat color
+  // CHANGED: Update the literal canvas color to match your new color
+  background-color: #557582 !important; 
+  
   font-family: 'Urbanist', sans-serif !important;
 }
 
