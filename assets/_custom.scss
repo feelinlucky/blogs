@@ -1,57 +1,25 @@
 // assets/_custom.scss
 
-// 1. Force Global Typography and Base Colors
+// 1. Force Global Typography and Base Flat Colors
 :root {
   --color-link: #38bdf8;
-  --body-font-color: #e2e8f0 !important;
+  --body-background: #121214 !important; // Flat matte dark background canvas
+  --body-font-color: #e2e8f0 !important; // Off-white readable body text
   --hint-background: #1e1e24;
   --gray-200: #2d3748;
-  
-  // Set the fallback theme variable to transparent so it doesn't block the body canvas
-  --body-background: transparent !important;
 }
 
-// 2. Apply the single, master background tile to the root canvas layers
+// Global base layer resets
 html, body {
-  background-color: #121214 !important; // Deep base color beneath the image
-  background-image: url("/blogs/images/index_bg.png") !important;
-  background-repeat: repeat !important;
-  background-size: 90px auto !important; 
-  background-position: top left !important;
+  background-color: #121214 !important; // Solid flat color
   font-family: 'Urbanist', sans-serif !important;
 }
 
-// 3. Make the main layout sheets completely clear so the background shows through
-.book-app,
-.book-page, 
-main,
-article {
+// Ensure theme elements strip background layering overlaps cleanly
+.book-app, .book-page, main, article {
   background: transparent !important;
 }
 
-// 4. Retro RPG Side Menu Customization
-.book-menu {
-  // Classic dark blue/black RPG window fluid background tint
-  background: rgba(47, 70, 164, 0.9) !important; 
-  
-  // Create the iconic retro borders
-  border: 3px solid #ffffff !important;        // Thick white outer frame
-  
-  // Curved edges matching older CRT screen constraints
-  border-radius: 12px !important;
-  
-  // Generous structural spacing so text doesn't bump the border walls
-  padding: 1.5rem !important;
-  margin: 1rem !important;                    // Floats the menu container slightly off the screen edges
-  height: calc(100vh - 2rem) !important;      // Prevents the frame from stretching off-screen
-}
-
-// Adjust the scrollable area inside the menu so it doesn't break your rounded corners
-.book-menu nav {
-  padding-right: 0.5rem;
-}
-
-// 5. Global Typography overrides
 input, button, h1, h2, h3, h4, p {
   font-family: 'Urbanist', sans-serif !important;
 }
@@ -60,31 +28,7 @@ code, pre, .mono-text {
   font-family: 'JetBrains Mono', monospace !important;
 }
 
-// 2. Custom Welcome Hero Section Styles (Inner page variant)
-.welcome-hero {
-  background: linear-gradient(135deg, #1e1e24 0%, #16161a 100%);
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  margin: 1.5rem 0 2.5rem 0;
-  border: 1px solid #2d3748;        
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  text-align: center;
-
-  h1 {
-    margin-top: 0;
-    font-size: 2.25rem;
-    color: #ffffff;                 
-    border-bottom: none; 
-  }
-
-  .subtitle {
-    font-size: 1.15rem;
-    color: #94a3b8;                 
-    margin-bottom: 2rem;
-  }
-}
-
-// 3. Index Hero Container Styling (INNER DIV TILE: WOOD)
+// 2. Index Page Layout (Flat Color Container)
 .custom-index-hero {
   position: relative;
   min-height: 70vh;
@@ -95,57 +39,83 @@ code, pre, .mono-text {
   overflow: hidden;
   margin: 1rem 0;
   
-  // Custom box styling for wood texture wrapper
-  background-color: #0b0f19; 
-  background-image: url("/blogs/images/wood_sprite.png");
-  background-repeat: repeat; 
-  background-size: 90px 90px;
-  background-position: center;
-  
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: #1a1f2c; // Flat dark slate color box instead of the wood pattern
+  border: 1px solid #2d3748;
 }
 
-// Radial gradient flare element to add depth on top of the wood pattern
-.custom-index-hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle at center, rgba(58, 123, 213, 0.15) 0%, transparent 70%);
-  pointer-events: none;
-  z-index: 1;
+// 3. Retro RPG Side Menu Configuration (Flat Color Variant)
+.book-menu {
+  background-color: #050c24 !important; // Solid classic deep blue RPG window color
+  border: 3px solid #ffffff !important; // Thick white frame line
+  outline: 1px solid #000000 !important;
+  outline-offset: -2px;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  margin: 1rem !important;
+  height: calc(100vh - 2rem) !important;
 }
 
-// 4. Custom Button Framework 
-.hero-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
+.book-menu nav {
+  padding-right: 0.5rem;
 }
 
-.book-btn {
-  display: inline-block;
-  padding: 0.6rem 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 6px;
-  background-color: #007bc2;
+.book-menu a {
+  font-family: 'JetBrains Mono', monospace !important;
   color: #ffffff !important;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  font-size: 1.05rem !important;
+  letter-spacing: 0.05em;
+  transition: padding-left 0.2s ease;
 
   &:hover {
-    background-color: #0090e0;      
-    transform: translateY(-1px);
+    color: #38bdf8 !important;
+    padding-left: 6px;
+  }
+}
+
+// 4. Fix Search Box Overflows inside Retro Border
+.book-search {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 0 0.5rem !important;
+  
+  input {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    background-color: #000000 !important; // Solid flat black cutout
+    border: 2px solid #ffffff !important;
+    border-radius: 4px !important;
+    color: #ffffff !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.4) !important;
+    }
+  }
+}
+
+// 5. Button and Text Layout Alignments
+.hero-overlay-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    border-bottom: none;
   }
 
-  &.btn-secondary {
-    background-color: transparent;
-    color: #cbd5e0 !important;      
-    border: 2px solid #4a5568;       
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.05); 
-      border-color: #718096;
-    }
+  p {
+    font-size: 1.25rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -158,111 +128,10 @@ code, pre, .mono-text {
   background-color: #007bc2;
   text-decoration: none;
   border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 123, 194, 0.3);
   transition: all 0.2s ease;
 
   &:hover {
     background-color: #0090e0;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 123, 194, 0.4);
-  }
-}
-
-// 5. Multi-Card Grid System
-.cards-grid {
-  display: flex;
-  flex-direction: column; 
-  gap: 1.5rem;            
-  margin-top: 3rem;       
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .cards-grid {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.info-card {
-  flex: 1;                 
-  background: rgba(255, 255, 255, 0.03); 
-  border: 1px solid rgba(255, 255, 255, 0.08); 
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-align: left;        
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover {
-    transform: translateY(-4px); 
-    background: rgba(255, 255, 255, 0.06);
-    border-color: #38bdf8; 
-  }
-
-  .card-icon {
-    font-size: 1.75rem;
-    margin-bottom: 0.75rem;
-  }
-
-  h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.25rem;
-    color: #ffffff;
-    border-bottom: none; 
-  }
-
-  p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #94a3b8;        
-    line-height: 1.5;
-  }
-}
-
-.hero-overlay-content {
-  position: relative;
-  z-index: 2; 
-  text-align: center;
-  padding: 2rem;
-  max-width: 600px;
-
-  h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: -0.02em;
-    margin-bottom: 1rem;
-    border-bottom: none; 
-  }
-
-  p {
-    font-size: 1.25rem;
-    color: #94a3b8;
-    line-height: 1.6;
-    margin-bottom: 2.5rem;
-  }
-}
-
-// 5. Fix Search Box Overflows inside Retro Border
-.book-search {
-  width: 100% !important;         // Forces the wrapper to match the menu interior width
-  box-sizing: border-box !important;
-  padding: 0 0.5rem !important;   // Adds breathing room on the left/right inside the menu
-  
-  input {
-    width: 100% !important;       // Restricts the actual text field size safely
-    max-width: 100% !important;   // Double-guard constraint against overflow leak
-    box-sizing: border-box !important;
-    
-    // Optional Retro Styling for Search Input box to match the look
-    background-color: rgba(0, 0, 0, 1) !important; // Solid retro black field cutout
-    border: 2px solid #ffffff !important;           // Matching menu frame lines
-    border-radius: 4px !important;                  // Slightly rounded box
-    color: #ffffff !important;
-    font-family: 'JetBrains Mono', monospace !important;
-    
-    &::placeholder {
-      color: rgba(255, 255, 255, 0.4) !important;   // High-contrast readable hint placeholder
-    }
   }
 }
