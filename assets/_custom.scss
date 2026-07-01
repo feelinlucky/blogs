@@ -25,7 +25,6 @@
 
 // Global base layer resets
 html, body {
-  // CORRECTED: Now dynamically references the root variable
   background-color: var(--body-background) !important; 
   font-family: 'Urbanist', sans-serif !important;
 }
@@ -55,7 +54,7 @@ code, pre, .mono-text {
   margin: 1rem 0;
   
   // CORRECTED: Using hero variables
-  background-color: var(--hero-bg);
+  background-color: var(--hero-bg) !important;
   border: 1px solid var(--hero-border);
 }
 
