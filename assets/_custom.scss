@@ -1,21 +1,32 @@
 // assets/_custom.scss
-// 1. Force Global Typography and Base Flat Colors
+
+// 1. Define Global Typography and Theme Variables
 :root {
-  --color-link: #38bdf8;
-  
-  // CHANGED: Update the theme layout background variable to your new color
+  // Theme layout backgrounds & text
   --body-background: #557582 !important; 
-  
   --body-font-color: #e2e8f0 !important;
   --hint-background: #1e1e24;
   --gray-200: #2d3748;
+  
+  // Interactive colors
+  --color-link: #38bdf8;
+  --btn-primary-bg: #007bc2;
+  --btn-primary-hover: #0090e0;
+
+  // Retro RPG UI specific variables
+  --rpg-menu-bg: #050c24;
+  --rpg-frame-line: #ffffff;
+  --rpg-search-bg: #000000;
+  
+  // Index Landing Page Hero variables
+  --hero-bg: #e8e1dd;
+  --hero-border: #c5ae89;
 }
 
 // Global base layer resets
 html, body {
-  // CHANGED: Update the literal canvas color to match your new color
-  background-color: #557582 !important; 
-  
+  // CORRECTED: Now dynamically references the root variable
+  background-color: var(--body-background) !important; 
   font-family: 'Urbanist', sans-serif !important;
 }
 
@@ -43,15 +54,17 @@ code, pre, .mono-text {
   overflow: hidden;
   margin: 1rem 0;
   
-  background-color: #e8e1dd;
-  border: 1px solid #c5ae89;
+  // CORRECTED: Using hero variables
+  background-color: var(--hero-bg);
+  border: 1px solid var(--hero-border);
 }
 
 // 3. Retro RPG Side Menu Configuration (Flat Color Variant)
 .book-menu {
-  background-color: #050c24 !important; // Solid classic deep blue RPG window color
-  border: 3px solid #ffffff !important; // Thick white frame line
-  outline: 1px solid #000000 !important;
+  // CORRECTED: Using RPG variables
+  background-color: var(--rpg-menu-bg) !important; 
+  border: 3px solid var(--rpg-frame-line) !important; 
+  outline: 1px solid var(--rpg-search-bg) !important;
   outline-offset: -2px;
   border-radius: 12px !important;
   padding: 1.5rem !important;
@@ -65,13 +78,13 @@ code, pre, .mono-text {
 
 .book-menu a {
   font-family: 'JetBrains Mono', monospace !important;
-  color: #ffffff !important;
+  color: var(--rpg-frame-line) !important; // CORRECTED
   font-size: 1.05rem !important;
   letter-spacing: 0.05em;
   transition: padding-left 0.2s ease;
 
   &:hover {
-    color: #38bdf8 !important;
+    color: var(--color-link) !important; // CORRECTED
     padding-left: 6px;
   }
 }
@@ -86,14 +99,16 @@ code, pre, .mono-text {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    background-color: #000000 !important; // Solid flat black cutout
-    border: 2px solid #ffffff !important;
+    background-color: var(--rpg-search-bg) !important; // CORRECTED
+    border: 2px solid var(--rpg-frame-line) !important; // CORRECTED
     border-radius: 4px !important;
-    color: #ffffff !important;
+    color: var(--rpg-frame-line) !important; // CORRECTED
     font-family: 'JetBrains Mono', monospace !important;
     
     &::placeholder {
-      color: rgba(255, 255, 255, 0.4) !important;
+      // SCSS can't mix CSS variables with alpha opacity this way easily, 
+      // but keeping it native or using regular RGBA is standard.
+      color: rgba(255, 255, 255, 0.4) !important; 
     }
   }
 }
@@ -109,7 +124,7 @@ code, pre, .mono-text {
   h1 {
     font-size: 3rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--rpg-frame-line); // CORRECTED
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
     border-bottom: none;
@@ -117,7 +132,7 @@ code, pre, .mono-text {
 
   p {
     font-size: 1.25rem;
-    color: #94a3b8;
+    color: #94a3b8; 
     line-height: 1.6;
     margin-bottom: 2.5rem;
   }
@@ -128,14 +143,14 @@ code, pre, .mono-text {
   padding: 0.8rem 2rem;
   font-size: 1.05rem;
   font-weight: 600;
-  color: #ffffff !important;
-  background-color: #007bc2;
+  color: var(--rpg-frame-line) !important; // CORRECTED
+  background-color: var(--btn-primary-bg); // CORRECTED
   text-decoration: none;
   border-radius: 8px;
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: #0090e0;
+    background-color: var(--btn-primary-hover); // CORRECTED
     transform: translateY(-2px);
   }
 }
