@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Docs on My New Hugo Project</title>
-		<link>https://example.org/docs/</link>
-		<description>Recent content in Docs on My New Hugo Project</description>
+		<title>Docs on ​🇳🇮​​🇨​​🇪​ ​🇹​​🇭​​🇮​​🇳​​🇬​​🇸​</title>
+		<link>//:1313/docs/</link>
+		<description>Recent content in Docs on ​🇳🇮​​🇨​​🇪​ ​🇹​​🇭​​🇮​​🇳​​🇬​​🇸​</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
 		
 		
 		
-			<atom:link href="https://example.org/docs/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="//:1313/docs/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Getting Started</title>
-				<link>https://example.org/docs/getting-started/</link>
+				<link>//:1313/docs/getting-started/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://example.org/docs/getting-started/</guid>
+				<guid>//:1313/docs/getting-started/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Introduction</title>
-				<link>https://example.org/docs/introduction/</link>
+				<link>//:1313/docs/introduction/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://example.org/docs/introduction/</guid>
-				<description>&lt;h2 id=&#34;weight-1&#34;&gt;title: &amp;ldquo;Introduction&amp;rdquo;&#xA;weight: 1&lt;a class=&#34;anchor&#34; href=&#34;#weight-1&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Welcome to my Hugo Book site!&lt;/p&gt;</description>
+				<guid>//:1313/docs/introduction/</guid>
+				<description>&lt;div class=&#34;welcome-hero&#34;&gt;&#xD;&#xA;&lt;div class=&#34;hero-text&#34;&gt;&#xD;&#xA;&lt;h1&gt;Welcome to my Hugo Book site! 🚀&lt;/h1&gt;&#xD;&#xA;&lt;p class=&#34;subtitle&#34;&gt;A clean space for structured documentation, personal notes, and digital gardens.&lt;/p&gt;&#xD;&#xA;&lt;div class=&#34;hero-cta&#34;&gt;&#xD;&#xA;&lt;a href=&#34;//:1313/docs/&#34; class=&#34;book-btn&#34;&gt;Browse Docs&lt;/a&gt;&#xD;&#xA;&lt;a href=&#34;https://github.com&#34; class=&#34;book-btn btn-secondary&#34;&gt;GitHub&lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;cards-grid&#34;&gt;&#xD;&#xA;&lt;div class=&#34;info-card&#34;&gt;&#xD;&#xA;&lt;div class=&#34;card-icon&#34;&gt;📚&lt;/div&gt;&#xD;&#xA;&lt;h3&gt;Digital Garden&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;An evolving collection of public notes, structural thoughts, and daily learnings.&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;info-card&#34;&gt;&#xD;&#xA;&lt;div class=&#34;card-icon&#34;&gt;⚡&lt;/div&gt;&#xD;&#xA;&lt;h3&gt;Quick Guides&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;Bite-sized, practical cheat sheets and tutorials built for speed execution.&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&#34;info-card&#34;&gt;&#xD;&#xA;&lt;div class=&#34;card-icon&#34;&gt;🛠️&lt;/div&gt;&#xD;&#xA;&lt;h3&gt;Projects&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;An overview of active open-source extensions, tools, and side experiments.&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h3 id=&#34;what-youll-find-here&#34;&gt;What you&amp;rsquo;ll find here&lt;a class=&#34;anchor&#34; href=&#34;#what-youll-find-here&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;Use this documentation space to explore our guides, APIs, and structural overviews.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

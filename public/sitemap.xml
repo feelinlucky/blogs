@@ -3,16 +3,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/docs/</loc>
+    <loc>//:1313/docs/</loc>
   </url><url>
-    <loc>https://example.org/docs/getting-started/</loc>
+    <loc>//:1313/docs/getting-started/</loc>
   </url><url>
-    <loc>https://example.org/docs/introduction/</loc>
+    <loc>//:1313/docs/introduction/</loc>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>//:1313/</loc>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>//:1313/categories/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>//:1313/tags/</loc>
   </url>
 </urlset>
